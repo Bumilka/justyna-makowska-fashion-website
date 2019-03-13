@@ -1,6 +1,8 @@
-import { Carousel } from 'react-bootstrap';
+import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-
+import baner1 from '../Image/ready_to_wear_baner_1.jpg'
+import baner2 from '../Image/dance_wear_baner_2.jpg'
+import baner3 from '../Image/dance_wear_baner_3.jpg'
 
 class ControlledCarousel extends React.Component {
     constructor(props, context) {
@@ -33,7 +35,7 @@ class ControlledCarousel extends React.Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
+              src={baner1}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -44,7 +46,7 @@ class ControlledCarousel extends React.Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
+              src={baner2}
               alt="Third slide"
             />
   
@@ -56,7 +58,7 @@ class ControlledCarousel extends React.Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
+              src={baner3}
               alt="Third slide"
             />
   
@@ -72,4 +74,5 @@ class ControlledCarousel extends React.Component {
     }
   }
   
-  render(<ControlledCarousel />);
+  ;
+  export default ControlledCarousel; 
