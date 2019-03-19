@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
         <div>
-            <ControlledCarousel/>
+            
             <div className="home-belt"></div>
             <FlyingBirds/>
             <div className="home-belt"></div>

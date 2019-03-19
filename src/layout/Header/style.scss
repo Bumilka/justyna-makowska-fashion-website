@@ -1,61 +1,107 @@
 @import '~bootstrap/scss/bootstrap.scss';
 @import '../../index.scss';
 
-header{
+
+.Header{
     position: relative;
     display: block;
     width: 100%;
-    height: 120px;
-    background: $black;
+    background:$black;
     color: $white;
+    height: 80px;
 
     .white-logo{
         height: 60px;
+        direction: row;
+        justify-content: center;  
+        align-items: flex-start;
+  
+    }
+    nav,
+    nav ul,
+    nav ul li {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        font-size: 15px;
+        letter-spacing: 5px;
+        line-height: 26px;
+        display: inline-block;
+        font-weight: 300px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 20px;
+
+
+            &.last{
+                margin: 0;
+            }
+            a{
+                font-size: 19px;
+                line-height: normal;
+                color: $white;
+
+            }
+        }
+    }
+}
+
+.HeaderFixed{
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: $black;
+    color: $white;
+    height: 50px;
+
+
+    .white-logo{
         position: absolute;
-        top: 50%; left: 15px;
-        @include tranlateY(-50%);
+        height: 50px;
     }
-
-    .nav-down{
-        margin: 0px;
-        padding: 0px;
-        margin-right: 10px;
+    nav,
+    nav ul,
+    nav ul li {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        font-size: 15px;
+        letter-spacing: 0.8px;
+        line-height: 26px;
+        display: inline-block;
+        font-weight: 300;
+        color: $white;
     }
-
     nav{
         position: absolute;
         top: 50%; right: 15px;
-        @include tranlateY(-50%);
-        margin-right: 20px;
+
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 20px;
+
+            &.last{
+                margin: 0;
+            }
+            a{
+                font-size: 19px;
+                line-height: normal;
+                color: $white;
+
+            }
+        }
     }
-    &.last{
-        margin:0;
-    }
-    a{
-        font-size: 19px;
-        line-height: normal;
-        color: $white;
-
-    }
 }
 
-/*
-.container-nav{
-    font-family: 'Poppins', sans-serif;
-    background: black;
-}
 
-.white-logo{
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
-.nav-down{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 15px;
-}
-*/
