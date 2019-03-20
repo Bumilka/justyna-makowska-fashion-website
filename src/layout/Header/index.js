@@ -3,15 +3,6 @@ import { Link } from 'react-router-dom';
 import logo from './logo_JM_white.png';
 import './style.scss';
 
-/*
-<nav className="nav-top">
-<Link to="/ready-to-wear"> Language PL / ANG </Link>
-<Link to="/">Shiping</Link>
-<Link to="/dance-wear">Login  </Link>
-<Link to="/atelier"> Add </Link>
-</nav>
-*/
-
 class Header extends Component {
   state = {
     isFixed: false,
@@ -22,7 +13,7 @@ class Header extends Component {
   }
 
   hanndelHeaderPosition = () => {
-    if (window.scrollY > 80 && !this.state.isFixed) {
+    if (window.scrollY > 110 && !this.state.isFixed) {
       this.setState({ isFixed: true });
     } else if (window.scrollY <= this.state.isFixed) {
       this.setState({ isFixed: false });
@@ -32,6 +23,7 @@ class Header extends Component {
   render() {
     return (
       <header className={this.state.isFixed ? 'HeaderFixed' : 'Header'}>
+       
         <div className="logo">
           <img src={logo} alt="Logo" className="white-logo" />
         </div>
