@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import heartIcon from '../../../layout/Header/HeaderIcons/heart.png';
+import logoBlackJM from '../Image/logo_JM.png';
 import './style.scss';
 
 class FlyingBirds extends Component {
   render() {
     return (
         <div className="container">
-            <h1>LET'S PLAY</h1>
+            <img src={heartIcon} className='heartIcon' alt="heartIcon" />
+            <img src={logoBlackJM} className='logoBlackJM' alt='logoBlackJM' />
             
             <div className="bird-container bird-container--one">
                 <div className="bird bird--one"></div>

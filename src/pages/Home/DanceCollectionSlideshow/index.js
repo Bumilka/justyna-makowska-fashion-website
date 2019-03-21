@@ -30,17 +30,19 @@ class DanceCollectionSlideshow extends Component {
     render() {
         const { properties, property } = this.state;
         return (
-            <div className="button-slideshow">
-                <button
-                    onClick={() => this.nextProperty()}
-                    disabled={property.index ===
-                        DataProduct.properties.length - 1}
-                >Next</button>
-                <button
-                    onClick={() => this.prevProperty()}
-                    disabled={property.index === 0}
-                >Prev</button>
-
+            <div>
+                <div className="botton-container">    
+                    <button className="button-next"
+                        onClick={() => this.nextProperty()}
+                        disabled={property.index ===
+                            DataProduct.properties.length - 1}
+                    >&#8249;</button>
+                    
+                    <button className="button-previous"
+                        onClick={() => this.prevProperty()}
+                        disabled={property.index === 0}
+                    >&#8250;</button>
+                </div>
                 <div className="slideshow-container">
 
                     <div className={`cards-slider active-slide-${property.index}`} >

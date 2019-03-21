@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './style.scss';
 
 const CardProduct = ({property}) => {
     const{index, picture, name, price, color,} = property;
@@ -8,10 +9,10 @@ const CardProduct = ({property}) => {
         <div id={`card-${index}`} className="card">
             <img src={picture} alt={name}/>
             <div className="details">
-                <span className="index">{index+1}</span>
                 <p className="item-details">
-                    {price}<br/>
-                    {name + ':'} {color}
+                    {name + ': '} {color}
+                     <br/>
+                     {'PRICE: ' + price}
                 </p>
             </div>
         </div>

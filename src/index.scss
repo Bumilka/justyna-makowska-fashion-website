@@ -1,6 +1,7 @@
 $black:#010000;
 $white: #ffffff;
 $lightGrey: #e6e6e6;
+$lightGrey: rgb(235, 236, 236);
 $darkGrey: #333;
 $red: #d40b0b;
 
@@ -12,7 +13,7 @@ body{
     font-style: normal;
     overflow-x: hidden;
 }
-
+/*
 a {
     text-decoration: none;
     // @include transition( 0.4s ease-in-out);
@@ -27,7 +28,7 @@ a {
 .container-fluid{
     line-height: 24px;
 }
-
+*/
 /*
 Mixins
 */
